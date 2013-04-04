@@ -1,3 +1,12 @@
+---
+layout: post
+title: "One-hundred Percent DNSimple"
+date: 2013-04-04 6:00
+comments: true
+external-url:
+categories:
+---
+
 Tomorrow is my last day at LivingSocial. After 2 years of being an employee I am now switching all of my focus to my own business. I am excited and nervous about this step, but I feel it is time.
 
 Working at LivingSocial has been an incredible experience. It was often quite challenging due to the sheer volume of traffic that LivingSocial handles on a daily basis. I had the pleasure of working on a wide range of projects, from payment systems to email delivery systems. I worked on the initial version of the 918F registration site and watched that project take off. I also worked with the Takeout & Delivery team to help improve restaurant ordering systems. It has been a helluva a ride, however now it is time to get focused on DNSimple.
