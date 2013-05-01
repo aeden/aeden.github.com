@@ -8,6 +8,7 @@ subtitle: Stuff and stuff.
 author: Anthony Eden
 simple_search: http://google.com/search
 description: A blog where I put stuff.
+exclude: ["*.swp"]
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
