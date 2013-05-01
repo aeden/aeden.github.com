@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Beginning"
+date: 2013-05-01 11:24
+comments: true
+categories: stories
+---
 When you don't know where to start, you start from the beginning. In this case though everything before 1994 would probably be mostly useless, even if it would occasionally be amusing. Thus, let's start in 1994.
 
 In 1994 I entered the University of Miami as a freshmen with my major as Music Composition. I can't recall why I choose to go to college - I suppose that's what a kid from a middle-class family is supposed to do, so I did it. I was very fortunate in that my father worked for the University of Miami for many years and essentially provided a means for me to go to U of M for free. No doubt that's another reason I went: it was essentially an extension of my parents taking care of me. 4 more years of fun and frolicking, right?
