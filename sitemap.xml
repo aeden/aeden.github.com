@@ -2,22 +2,26 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://anthonyeden.com/blog/2012/09/27/all-things-v8/</loc>
-        <lastmod>2013-04-04T22:13:56+02:00</lastmod>
+        <lastmod>2013-05-01T11:53:37+02:00</lastmod>
     </url>
     <url>
         <loc>http://anthonyeden.com/blog/2013/04/04/one-hundred-percent-dnsimple/</loc>
-        <lastmod>2013-04-04T22:13:56+02:00</lastmod>
+        <lastmod>2013-05-01T11:53:37+02:00</lastmod>
     </url>
     <url>
         <loc>http://anthonyeden.com/blog/2013/05/01/beginning/</loc>
-        <lastmod>2013-05-01T11:45:32+02:00</lastmod>
+        <lastmod>2013-05-01T11:53:37+02:00</lastmod>
     </url>
     <url>
         <loc>http://anthonyeden.com/blog/archives/</loc>
-        <lastmod>2013-05-01T11:45:32+02:00</lastmod>
+        <lastmod>2013-05-01T11:53:37+02:00</lastmod>
     </url>
     <url>
         <loc>http://anthonyeden.com/</loc>
-        <lastmod>2013-05-01T11:45:32+02:00</lastmod>
+        <lastmod>2013-05-01T11:53:37+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://anthonyeden.com/robots.txt</loc>
+        <lastmod>2013-05-01T11:53:37+02:00</lastmod>
     </url>
 </urlset>
