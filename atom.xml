@@ -4,7 +4,7 @@
   <title><![CDATA[All Things (v8)]]></title>
   <link href="http://anthonyeden.com/atom.xml" rel="self"/>
   <link href="http://anthonyeden.com/"/>
-  <updated>2013-05-05T08:55:37+02:00</updated>
+  <updated>2013-05-06T21:56:22+02:00</updated>
   <id>http://anthonyeden.com/</id>
   <author>
     <name><![CDATA[Anthony Eden]]></name>
@@ -12,6 +12,27 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Projects Moved: erl-dns and dnstest]]></title>
+    <link href="http://anthonyeden.com/blog/2013/05/06/projects-moved-erl-dns-and-dnstest/"/>
+    <updated>2013-05-06T21:52:00+02:00</updated>
+    <id>http://anthonyeden.com/blog/2013/05/06/projects-moved-erl-dns-and-dnstest</id>
+    <content type="html"><![CDATA[<p>Two projects which I&#8217;ve been spending considerable time on lately, erl-dns and dnstest, have now been moved under the aetrion organization on Github.</p>
+
+<h2>erl-dns</h2>
+
+<p>The <a href="https://github.com/aetrion/erl-dns">erl-dns project</a> is an authoritative DNS server written in Erlang. Warning: don&#8217;t try this at home.</p>
+
+<h2>dnstest</h2>
+
+<p>The <a href="https://github.com/aetrion/dnstest">dnstest</a> project is a collection of regression tests from the PowerDNS 3 regression test suite which I&#8217;ve switched over to run in an Erlang test harness. I use these tests to test the correctness of the responses from erl-dns.</p>
+
+<p>I&#8217;ll be writing more about both of these projects in the future, especially as we move erl-dns into production at <a href="https://dnsimple.com">DNSimple</a>.</p>
+
+<p>Update your forks if necessary. Thanks!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hacking CGI and Perl]]></title>
