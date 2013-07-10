@@ -9,7 +9,7 @@
   <meta name="author" content="Anthony Eden">
 
   
-  <meta name="description" content="Two projects which I&#8217;ve been spending considerable time on lately, erl-dns and dnstest, have now been moved under the aetrion organization on &hellip;">
+  <meta name="description" content="Author&#8217;s note: This is a repost of an post I originally wrote in 2011. I&#8217;m reposting it by request. Enjoy! This evening Corey and I sat &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -71,6 +71,140 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2013/07/10/testing-rest-apis-with-cucumber-and-rack/">Testing REST APIs With Cucumber and Rack</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-10T15:48:00-04:00" pubdate data-updated="true">Jul 10<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><em>Author&#8217;s note: This is a repost of an post I originally wrote in 2011. I&#8217;m reposting it by request. Enjoy!</em></p>
+
+<p>This evening Corey and I sat down and started looking into how we could make the tests live again. First we attempted to use Capybara directly, but ran into issues when trying to set HTTP headers. The DNSimple API uses Basic HTTP Authentication and thus we needed to set the header for that. We also need to set the Content-Type and Accept headers to ensure that Rails handles the input and output correctly. After peeling back some layers of the Capybara onion we landed upon Rack::Test. When using Rack, Capybara delegates request and response handling down to <a href="/web/20111201110921/http://github.com/brynary/rack-test">Rack::Test</a>. At this point we decided to see if we could use Rack::Test directly in our step definitions, and it worked like a charm.</p>
+
+<p>Rack::Test has a module called Rack::Test::Methods that can be mixed into a class to provide it with methods for get, post, put, delete as well as last_request, last_response, header and more. We mixed Rack::Test::Methods into the Cucumber world at the top of our API steps file like so:</p>
+
+<script src="/web/20111201110921js_/http://gist.github.com/660319.js?file=gistfile1.rb"></script>
+
+
+<p>Then our steps could simply call the Rack::Test methods directly. For example, here&#8217;s how to send the HTTP Basic Auth header:</p>
+
+<script src="/web/20111201110921js_/http://gist.github.com/660321.js?file=gistfile1.rb"></script>
+
+
+<p>And to set content type and accept headers:</p>
+
+<script src="/web/20111201110921js_/http://gist.github.com/660323.js?file=gistfile1.rb"></script>
+
+
+<p>And finally to actually send requests and test the responses. The entire api_steps.rb as it is right now looks like this:</p>
+
+<script src="/web/20111201110921js_/http://gist.github.com/660331.js?file=api_steps.rb"></script>
+
+
+<p>And here is an example of a Cucumber feature that uses the API steps:</p>
+
+<script src="/web/20111201110921js_/http://gist.github.com/660337.js?file=list_domains.feature"></script>
+
+
+<p>I doubt we&#8217;ve ended up with the ultimate final set of steps that can be used repeatedly for testing RESTful APIs, however I think it is an excellent start. I&#8217;m still on the fence about how to check the response body, specifically whether it is better to match the response body as a string or to actually parse it and write custom steps for each of the different types of objects, but time will tell.</p>
+
+<p>As usual pairing with Corey resulted in some good code, a usable solution and something that I think others will benefit from as well.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/05/31/the-internet-nomadic-employment-and-opportunity/">The Internet, Nomadic Employment and Opportunity</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-05-31T18:41:00-04:00" pubdate data-updated="true">May 31<span>st</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Note: I originally planned for my next post to be about my time spent working on Java and my deep immersion into Open Source development. I might get to it at some point, but this is not that post.</p>
+
+<p>When @dje showed me the World Wide Web for the first time he said that this was the future. At the time I had no idea how right he was, nor did I (nor anyone else for that matter) really understand how significant the impact would be, on all facets of our lives.</p>
+
+<p>In 1998 I came back to the US after having lived in Vienna for a little less than a year. I finished up my studies at the University of Miami and married my wife. Initially we had a civil wedding in the tiny Town of Malabar, a rural town on the East Coast of Florida where I grew up. We were actually the first, and perhaps the only, couple to be married in the town hall. My wife and I both agreed that after school was done we would go back to France and have a traditional French wedding with her family. We also decided that we would stay in France for a while and see where our life together would take us. Moving to three different countries in three years pretty much set in stone what would be the story of our life so far.</p>
+
+<p>How does this all tie back to the Internet? Well simply put none of it would have been quite the same without the ability to relocate across the world and yet still be able to communicate so effectively with friends, family and
+employers. The former were easier to handle than the later, but eventually the Internet has made communication with <em>everyone</em> simpler and more practical.</p>
+
+<p>Which brings me to today: communicating through the Internet has become the primary mode of communication for people like me, people who can&#8217;t settle in one place for any extended period of time. We&#8217;re modern-day nomads who desperately want to be able to interact with the world, to maintain our virtual connections as we explore the world around us. Unfortunately there are still some significant hold-outs that haven&#8217;t quite caught up with the way of life I&#8217;ve chosen. Most of these holdouts are in some way regulated by national and local governments, which probably has a lot to do with their inability to catch up. Let&#8217;s look at some examples.</p>
+
+<h2>Telecom and Internet</h2>
+
+<p>I chose telecom and Internet providers first because they are the lifeline to my primary means of communication. Without Internet everything I do breaks down. I cannot communicate with my family abroad, I cannot run my business, I cannot do much of anything. So where are we today with telecom and Internet providers for nomads? First off there are some countries where the monopolies of old-school telecom providers have been broken and where you can actually get a SIM card for an iPhone, plug it in and use tethering without having to a.) have a 2 year subscription and b.) pay fees just because you&#8217;re actually <em>using</em> the data pipe that these providers claim to be providing. I feel like that might come off as overly bitter, but that&#8217;s because in far too many countries this is still not the case. Even in France, where we have Free mobile, which has caused an upheaval for French mobile providers due to their extreme price cut (17 EUR for unlimited voice, SMS and data for the iPhone, including teathering), you still have to actually have a physical address to qualify. So there&#8217;s still no good option for nomads sadly. 3, in the UK, does a pretty good job of making it easy to walk in to a store and buy a SIM that works, but they seem to be the exception, not the rule. Ultimately mobile data providers will likely be forced to become the data provider for the wanderer, so I hope they figure out pretty soon how make it easier for us nomads to wander.</p>
+
+<p>Back in the early 2000&#8217;s I worked with @dje a bit on mesh networking with wifi. Sadly it never went anywhere. Again, using Free as an example, you can try to bounce from Freebox to Freebox and temporarily borrow some of the bandwidth from the Freebox owner if you are a Free customer, however the bandwidth seems to be severely limited and often the connection simply does not work. Nice idea, but it&#8217;s mostly a flop for the moment. This type of infrastructure probably has to be treated like roads and basic education - developed and funded by the general public with an eye towards use by all, resident or not, in order for it to actually work. That is, after all, what public government is good for, handling infrastructure needs that are too big for private enities to develop.</p>
+
+<p>So, telecom and Internet for the nomad is largely a struggle in finding a patchwork of access points, including friends&#8217; networks, McDonalds and Starbucks and the occasional tethering SIM if we&#8217;re lucky.</p>
+
+<h2>Medical Insurance and Health Care</h2>
+
+<p>If you&#8217;ve ever travelled outside of your homeland and needed to go to a hospital due to an unforseen circumstance (I say as I look at my right knee, which I severely tweaked while snowboarding back in 1997) you know that you&#8217;ll probably have to pull out your credit card as proof of payment. Health insurance doesn&#8217;t typically travel well. Of course you can buy health care that will reimburse you for hospital and doctor stays abroad, but you&#8217;ll likely pay even more on top of the already high prices for your &#8220;benefits&#8221;. When you actually have to claim, don&#8217;t expect an easy ride either.</p>
+
+<p>Right now the only solution seems to be to get the initial emergency treatment in the foreign country and then make your way back to wherever you claim residency as quickly as possible to minimize your out-of-pocket expenses. Either that or have deep pockets so you can just pay for treatment locally or relocate to where you can get really good treatment at significantly lower costs. Thailand seems to be a good destination for the new-world-order of low-cost, decent quality health care (at least according to second-hand stories and reports I&#8217;ve read).</p>
+
+<h2>Banking</h2>
+
+<p>I&#8217;m not talking about the ability to bank remotely once you&#8217;ve established an account, banks have gotten so much better with this in recent years. I&#8217;m talking about the act of banking</p>
+
+<h2>Government Services (Read: Taxation)</h2>
+
+<p>Originally I called out inadaquacy of payroll companies, but the truth is that payroll companies are facilitators to proper reporting for taxation, and that&#8217;s their primary function. The real problem is that government taxation is stuck on yearly cycles and tied directly to residency.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2013/05/06/projects-moved-erl-dns-and-dnstest/">Projects Moved: Erl-dns and Dnstest</a></h1>
     
     
@@ -87,7 +221,7 @@
   
 
 
-<time datetime="2013-05-06T21:52:00+02:00" pubdate data-updated="true">May 6<span>th</span>, 2013</time>
+<time datetime="2013-05-06T21:52:00-04:00" pubdate data-updated="true">May 6<span>th</span>, 2013</time>
         
       </p>
     
@@ -135,7 +269,7 @@
   
 
 
-<time datetime="2013-05-04T20:37:00+02:00" pubdate data-updated="true">May 4<span>th</span>, 2013</time>
+<time datetime="2013-05-04T20:37:00-04:00" pubdate data-updated="true">May 4<span>th</span>, 2013</time>
         
       </p>
     
@@ -183,7 +317,7 @@
   
 
 
-<time datetime="2013-05-01T11:24:00+02:00" pubdate data-updated="true">May 1<span>st</span>, 2013</time>
+<time datetime="2013-05-01T11:24:00-04:00" pubdate data-updated="true">May 1<span>st</span>, 2013</time>
         
       </p>
     
@@ -229,7 +363,7 @@
   
 
 
-<time datetime="2013-04-04T06:00:00+02:00" pubdate data-updated="true">Apr 4<span>th</span>, 2013</time>
+<time datetime="2013-04-04T06:00:00-04:00" pubdate data-updated="true">Apr 4<span>th</span>, 2013</time>
         
       </p>
     
@@ -269,7 +403,7 @@
   
 
 
-<time datetime="2012-09-27T12:13:00+02:00" pubdate data-updated="true">Sep 27<span>th</span>, 2012</time>
+<time datetime="2012-09-27T12:13:00-04:00" pubdate data-updated="true">Sep 27<span>th</span>, 2012</time>
         
       </p>
     
@@ -297,6 +431,14 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/07/10/testing-rest-apis-with-cucumber-and-rack/">Testing REST APIs With Cucumber and Rack</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/31/the-internet-nomadic-employment-and-opportunity/">The Internet, Nomadic Employment and Opportunity</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/05/06/projects-moved-erl-dns-and-dnstest/">Projects Moved: erl-dns and dnstest</a>
       </li>
     
@@ -306,14 +448,6 @@
     
       <li class="post">
         <a href="/blog/2013/05/01/beginning/">Beginning</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/04/04/one-hundred-percent-dnsimple/">One-hundred Percent DNSimple</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/09/27/all-things-v8/">All Things v8</a>
       </li>
     
   </ul>

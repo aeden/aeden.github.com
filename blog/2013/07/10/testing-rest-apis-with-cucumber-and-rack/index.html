@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: stories - All Things (v8)</title>
+  <title>Testing REST APIs With Cucumber and Rack - All Things (v8)</title>
   <meta name="author" content="Anthony Eden">
 
   
-  <meta name="description" content="Category: stories">
+  <meta name="description" content="Author&#8217;s note: This is a repost of an post I originally wrote in 2011. I&#8217;m reposting it by request. Enjoy! This evening Corey and I sat &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://anthonyeden.comblog/categories/stories">
+  <link rel="canonical" href="http://anthonyeden.com/blog/2013/07/10/testing-rest-apis-with-cucumber-and-rack">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="All Things (v8)" type="application/atom+xml">
@@ -64,35 +64,109 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Stories</h1>
+    
+      <h1 class="entry-title">Testing REST APIs With Cucumber and Rack</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-10T15:48:00-04:00" pubdate data-updated="true">Jul 10<span>th</span>, 2013</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><p><em>Author&#8217;s note: This is a repost of an post I originally wrote in 2011. I&#8217;m reposting it by request. Enjoy!</em></p>
 
-  
-  <h2>2013</h2>
+<p>This evening Corey and I sat down and started looking into how we could make the tests live again. First we attempted to use Capybara directly, but ran into issues when trying to set HTTP headers. The DNSimple API uses Basic HTTP Authentication and thus we needed to set the header for that. We also need to set the Content-Type and Accept headers to ensure that Rails handles the input and output correctly. After peeling back some layers of the Capybara onion we landed upon Rack::Test. When using Rack, Capybara delegates request and response handling down to <a href="/web/20111201110921/http://github.com/brynary/rack-test">Rack::Test</a>. At this point we decided to see if we could use Rack::Test directly in our step definitions, and it worked like a charm.</p>
 
-<article>
-  
-<h1><a href="/blog/2013/05/01/beginning/">Beginning</a></h1>
-<time datetime="2013-05-01T11:24:00-04:00" pubdate><span class='month'>May</span> <span class='day'>01</span> <span class='year'>2013</span></time>
+<p>Rack::Test has a module called Rack::Test::Methods that can be mixed into a class to provide it with methods for get, post, put, delete as well as last_request, last_response, header and more. We mixed Rack::Test::Methods into the Cucumber world at the top of our API steps file like so:</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/stories/'>stories</a></span>
-</footer>
+<script src="/web/20111201110921js_/http://gist.github.com/660319.js?file=gistfile1.rb"></script>
 
 
-</article>
+<p>Then our steps could simply call the Rack::Test methods directly. For example, here&#8217;s how to send the HTTP Basic Auth header:</p>
 
+<script src="/web/20111201110921js_/http://gist.github.com/660321.js?file=gistfile1.rb"></script>
+
+
+<p>And to set content type and accept headers:</p>
+
+<script src="/web/20111201110921js_/http://gist.github.com/660323.js?file=gistfile1.rb"></script>
+
+
+<p>And finally to actually send requests and test the responses. The entire api_steps.rb as it is right now looks like this:</p>
+
+<script src="/web/20111201110921js_/http://gist.github.com/660331.js?file=api_steps.rb"></script>
+
+
+<p>And here is an example of a Cucumber feature that uses the API steps:</p>
+
+<script src="/web/20111201110921js_/http://gist.github.com/660337.js?file=list_domains.feature"></script>
+
+
+<p>I doubt we&#8217;ve ended up with the ultimate final set of steps that can be used repeatedly for testing RESTful APIs, however I think it is an excellent start. I&#8217;m still on the fence about how to check the response body, specifically whether it is better to match the response body as a string or to actually parse it and write custom steps for each of the different types of objects, but time will tell.</p>
+
+<p>As usual pairing with Corey resulted in some good code, a usable solution and something that I think others will benefit from as well.</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Anthony Eden</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-10T15:48:00-04:00" pubdate data-updated="true">Jul 10<span>th</span>, 2013</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://anthonyeden.com/blog/2013/07/10/testing-rest-apis-with-cucumber-and-rack/" data-via="aeden" data-counturl="http://anthonyeden.com/blog/2013/07/10/testing-rest-apis-with-cucumber-and-rack/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/05/31/the-internet-nomadic-employment-and-opportunity/" title="Previous Post: The Internet, Nomadic Employment and Opportunity">&laquo; The Internet, Nomadic Employment and Opportunity</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>

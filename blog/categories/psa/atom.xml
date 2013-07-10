@@ -4,7 +4,7 @@
   <title><![CDATA[Category: psa | All Things (v8)]]></title>
   <link href="http://anthonyeden.com/blog/categories/psa/atom.xml" rel="self"/>
   <link href="http://anthonyeden.com/"/>
-  <updated>2013-05-06T21:56:22+02:00</updated>
+  <updated>2013-07-10T15:51:59-04:00</updated>
   <id>http://anthonyeden.com/</id>
   <author>
     <name><![CDATA[Anthony Eden]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Projects Moved: erl-dns and dnstest]]></title>
     <link href="http://anthonyeden.com/blog/2013/05/06/projects-moved-erl-dns-and-dnstest/"/>
-    <updated>2013-05-06T21:52:00+02:00</updated>
+    <updated>2013-05-06T21:52:00-04:00</updated>
     <id>http://anthonyeden.com/blog/2013/05/06/projects-moved-erl-dns-and-dnstest</id>
     <content type="html"><![CDATA[<p>Two projects which I've been spending considerable time on lately, erl-dns and dnstest, have now been moved under the aetrion organization on Github.</p>
 
