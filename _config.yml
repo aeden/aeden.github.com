@@ -1,3 +1,7 @@
-name: All Things v9
+description: Words from Anthony Eden, Founder of DNSimple
+title: All Things v9
 markdown: redcarpet
 pygments: true
+author:
+  name: Anthony Eden
+version: 9

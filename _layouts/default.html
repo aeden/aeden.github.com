@@ -1,44 +1,33 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+  {% include head.html %}
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+  <body class="theme-base-0d">
 
-    </head>
-    <body>
+    <header class="masthead">
+      <div class="masthead-inner">
+        <h1><a href="/">{{ site.title }}</a></h1>
+        <p class="lead">{{ site.description }}</p>
 
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
-
-          {{ content }}
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Anthony Eden<br />
-                DNSimple Founder<br />
-                anthonyeden at gmail
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/aeden">github.com/aeden</a><br />
-                <a href="https://twitter.com/aeden">twitter.com/aeden</a><br />
-              </p>
-            </div>
-          </div>
+        <div class="colophon">
+          <ul class="colophon-links">
+            <li>
+              <a href="http://twitter.com/aeden">Twitter</a>
+            </li>
+            <li>
+              <a href="https://github.com/aeden">GitHub</a>
+            </li>
+            <li>Currently v{{ site.version }}</li>
+          </ul>
+          <p>&copy; {{ site.author.name }} All rights reserved.</p>
         </div>
+      </div>
+    </header>
 
-    </body>
+    <div class="content container">
+      {{ content }}
+    </div>
+
+  </body>
 </html>
