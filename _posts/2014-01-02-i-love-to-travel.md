@@ -1,5 +1,7 @@
 ---
 published: true
+layout: post
+date: "2014-01-02 23:00:00"
 ---
 
 ## I Love to Travel
