@@ -28,7 +28,7 @@ One of my favorite things to do is to travel to new locations and enjoy new expe
 
 10. Finally, have an adventure. You don't have to hike the Himilayas or travel the Gobi desert, but you should try to do something that you've never done before when you can.
 
-Addendum.
+### Addendum
 
 My wife mentioned a few more tips that I left off:
 
