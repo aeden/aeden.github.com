@@ -38,5 +38,3 @@ My wife mentioned a few more tips that I left off:
 4. Don't overpack. Separate each kids things from the others by putting smaller bags in one or two larger ones. Garbage bags work great and double for dirty clothers bags later.
 
 I'm sure there are even more, but I'm going to stop now. ;-)
-
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
