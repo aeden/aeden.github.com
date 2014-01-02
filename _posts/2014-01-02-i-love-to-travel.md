@@ -4,8 +4,6 @@ layout: post
 date: "2014-01-02 23:00:00"
 ---
 
-## I Love to Travel
-
 One of my favorite things to do is to travel to new locations and enjoy new experiences. Last year, my wife, kids and I travelled together to Berlin, New York, Canada, Michigan, Pennsylvania and Rome. Travelling as a family is challenging (especially when you have 4 kids), but it's absolutely worth it. Here are some tips that I have found that help:
 
 ### The Tips
