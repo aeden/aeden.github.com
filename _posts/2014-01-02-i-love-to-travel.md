@@ -27,4 +27,16 @@ One of my favorite things to do is to travel to new locations and enjoy new expe
 9. Give yourself time after you get home. You'll need to recover so make sure to take some time off *after* your vaction and before you return to school or work.
 
 10. Finally, have an adventure. You don't have to hike the Himilayas or travel the Gobi desert, but you should try to do something that you've never done before when you can.
+
+Addendum.
+
+My wife mentioned a few more tips that I left off:
+
+1. Always have a change of clothes for each child.
+2. Carry around a plastic bag for "messes".
+3. Get each kid a surprise for the trip and only give it to them once you're in the air (or on the road).
+4. Don't overpack. Separate each kids things from the others by putting smaller bags in one or two larger ones. Garbage bags work great and double for dirty clothers bags later.
+
+I'm sure there are even more, but I'm going to stop now. ;-)
+
 Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
