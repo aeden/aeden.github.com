@@ -1,0 +1,101 @@
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Aeden</title>
+    <link>http://anthonyeden.com/progressive/podcast.xml</link>
+    <description>Progressive House and Trance mixes</description>
+    <language>en</language>
+    <copyright>Anthony Eden</copyright>
+    <lastBuildDate>Sat, 08 Aug 2015 01:40:11 +0000</lastBuildDate>
+    <category>Music</category>
+    <atom:link rel="self" href="http://anthonyeden.com/progressive/podcast.xml" type="application/rss+xml"/>
+    <itunes:author>Aeden</itunes:author>
+    <itunes:summary>Progressive House and Trance mixes</itunes:summary>
+    <itunes:owner>
+      <itunes:name>Aeden</itunes:name>
+      <itunes:email>me@anthonyeden.com</itunes:email>
+    </itunes:owner>
+    <itunes:image href=""/>
+    <itunes:link rel="image" type="video/jpeg" href="">Aeden</itunes:link>
+    <itunes:category text="Music"/>
+    <itunes:keyword>aeden, progressive house, trance</itunes:keyword>
+    <itunes:explicit>no</itunes:explicit>
+    <item>
+      <title>Progessive #6</title>
+      <link>http://anthonyeden.com/progressive/6</link>
+      <description>Episode #6</description>
+      <author>Aeden</author>
+      <enclosure url="https://dl.dropboxusercontent.com/u/3308516/Mixes/Progressive-6.mp3" length="127392999" type="audio/mpeg"/>
+      <guid>aeden6</guid>
+      <pubDate>Fri, 7 Aug 2015 08:00:00 +0000</pubDate>
+      <itunes:author>Aeden</itunes:author>
+      <itunes:subtitle>Episode #6</itunes:subtitle>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>1:28:09</itunes:duration>
+    </item>
+    <item>
+      <title>Progessive #5</title>
+      <link>http://anthonyeden.com/progressive/5</link>
+      <description>Episode #5</description>
+      <author>Aeden</author>
+      <enclosure url="https://dl.dropboxusercontent.com/u/3308516/Mixes/Progressive-5.mp3" length="166787129" type="audio/mpeg"/>
+      <guid>aeden5</guid>
+      <pubDate>Wed, 29 Jul 2015 08:00:00 +0000</pubDate>
+      <itunes:author>Aeden</itunes:author>
+      <itunes:subtitle>Episode #5</itunes:subtitle>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>1:55:38</itunes:duration>
+    </item>
+    <item>
+      <title>Progessive #4</title>
+      <link>http://anthonyeden.com/progressive/4</link>
+      <description>Episode #4</description>
+      <author>Aeden</author>
+      <enclosure url="https://dl.dropboxusercontent.com/u/3308516/Mixes/Progressive-4.mp3" length="144525439" type="audio/mpeg"/>
+      <guid>aeden4</guid>
+      <pubDate>Fri, 17 Jul 2015 08:00:00 +0000</pubDate>
+      <itunes:author>Aeden</itunes:author>
+      <itunes:subtitle>Episode #4</itunes:subtitle>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>1:40:07</itunes:duration>
+    </item>
+    <item>
+      <title>Progessive #3</title>
+      <link>http://anthonyeden.com/progressive/3</link>
+      <description>Episode #3</description>
+      <author>Aeden</author>
+      <enclosure url="https://dl.dropboxusercontent.com/u/3308516/Mixes/Progressive-3.mp3" length="110935566" type="audio/mpeg"/>
+      <guid>aeden3</guid>
+      <pubDate>Fri, 03 Jul 2015 08:00:00 +0000</pubDate>
+      <itunes:author>Aeden</itunes:author>
+      <itunes:subtitle>Episode #3</itunes:subtitle>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>1:16:42</itunes:duration>
+    </item>
+    <item>
+      <title>Progessive #2</title>
+      <link>http://anthonyeden.com/progressive/2</link>
+      <description>Episode #2</description>
+      <author>Aeden</author>
+      <enclosure url="https://dl.dropboxusercontent.com/u/3308516/Mixes/Progressive-2.mp3" length="111961905" type="audio/mpeg"/>
+      <guid>aeden2</guid>
+      <pubDate>Fri, 03 Jul 2015 08:00:00 +0000</pubDate>
+      <itunes:author>Aeden</itunes:author>
+      <itunes:subtitle>Episode #2</itunes:subtitle>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>1:17:45</itunes:duration>
+    </item>
+    <item>
+      <title>Progessive #1</title>
+      <link>http://anthonyeden.com</link>
+      <description>Episode #1</description>
+      <author>Aeden</author>
+      <enclosure url="https://dl.dropboxusercontent.com/u/3308516/Mixes/Progressive-1.mp3" length="115561787" type="audio/mpeg"/>
+      <guid>aeden1</guid>
+      <pubDate>Mon, 29 Jun 2015 08:00:00 +0000</pubDate>
+      <itunes:author>Aeden</itunes:author>
+      <itunes:subtitle>Episode #1</itunes:subtitle>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>1:20:15</itunes:duration>
+    </item>
+  </channel>
+</rss>
