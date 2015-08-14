@@ -10,6 +10,7 @@ Grab the [podcast URL](/progressive/podcast.xml) and enjoy!
 
 ## Track Listings
 
+* [Episode #7](/progressive/7.html)
 * [Episode #6](/progressive/6.html)
 * [Episode #5](/progressive/5.html)
 * [Episode #4](/progressive/4.html)
