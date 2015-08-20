@@ -10,4 +10,4 @@ You can find me on Twitter as [@aeden](http://twitter.com/aeden) and on Github a
 
 I also used to publish a podcast called the [Strong Businesses Podcast](http://strongbusinessespodcast.com) with Steven Bristol of LessEverything. Some day it may return.
 
-I also create music from time-to-time. You can find me on [SoundCloud](https://soundcloud.com/aeden-1).
+I also create music from time-to-time. You can find me on [SoundCloud](https://soundcloud.com/the-other-aeden).
