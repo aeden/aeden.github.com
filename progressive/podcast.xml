@@ -5,7 +5,7 @@
     <description>Progressive House and Trance mixes</description>
     <language>en</language>
     <copyright>Anthony Eden</copyright>
-    <lastBuildDate>Fri, 14 Aug 2015 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Aug 2015 08:00:00 +0000</lastBuildDate>
     <category>Music</category>
     <atom:link rel="self" href="http://anthonyeden.com/progressive/podcast.xml" type="application/rss+xml"/>
     <itunes:author>Aeden</itunes:author>
@@ -19,6 +19,19 @@
     <itunes:category text="Music"/>
     <itunes:keyword>aeden, progressive house, trance</itunes:keyword>
     <itunes:explicit>no</itunes:explicit>
+    <item>
+      <title>Progessive #8</title>
+      <link>http://anthonyeden.com/progressive/8</link>
+      <description>Episode #8</description>
+      <author>Aeden</author>
+      <enclosure url="https://dl.dropboxusercontent.com/u/3308516/Mixes/Progressive-8.mp3" length="172219236" type="audio/mpeg"/>
+      <guid>aeden8</guid>
+      <pubDate>Fri, 21 Aug 2015 08:00:00 +0000</pubDate>
+      <itunes:author>Aeden</itunes:author>
+      <itunes:subtitle>Episode #8</itunes:subtitle>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>1:58:43</itunes:duration>
+    </item>
     <item>
       <title>Progessive #7</title>
       <link>http://anthonyeden.com/progressive/7</link>
