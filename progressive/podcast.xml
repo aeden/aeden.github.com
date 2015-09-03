@@ -1,6 +1,6 @@
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>Aeden</title>
+    <title>The Minister Prime</title>
     <link>http://anthonyeden.com/progressive/podcast.xml</link>
     <description>Progressive House and Trance mixes</description>
     <language>en</language>
@@ -8,26 +8,40 @@
     <lastBuildDate>Fri, 20 Aug 2015 08:00:00 +0000</lastBuildDate>
     <category>Music</category>
     <atom:link rel="self" href="http://anthonyeden.com/progressive/podcast.xml" type="application/rss+xml"/>
-    <itunes:author>Aeden</itunes:author>
+    <itunes:author>The Minister Prime</itunes:author>
     <itunes:summary>Progressive House and Trance mixes</itunes:summary>
     <itunes:owner>
-      <itunes:name>Aeden</itunes:name>
-      <itunes:email>me@anthonyeden.com</itunes:email>
+      <itunes:name>The Minister Prime</itunes:name>
+      <itunes:email>me@theministerprime.com</itunes:email>
     </itunes:owner>
-    <itunes:image href=""/>
-    <itunes:link rel="image" type="video/jpeg" href="">Aeden</itunes:link>
+    <itunes:image href="http://www.anthonyeden.com/progressive/the-minister-prime.png"/>
+    <itunes:link rel="image" type="img/png" href="http://www.anthonyeden.com/progressive/the-minister-prime.png">The Minister Prime</itunes:link>
     <itunes:category text="Music"/>
-    <itunes:keyword>aeden, progressive house, trance</itunes:keyword>
+    <itunes:keyword>the minister prime, progressive house, trance</itunes:keyword>
     <itunes:explicit>no</itunes:explicit>
+    <item>
+      <title>Progessive #9</title>
+      <link>http://anthonyeden.com/progressive/9</link>
+      <description>Episode #9</description>
+      <author>The Minister Prime</author>
+      <enclosure url="https://dl.dropboxusercontent.com/u/3308516/Mixes/Progressive-9.mp3" length="137780644" type="audio/mpeg"/>
+      <guid>aeden9</guid>
+      <pubDate>Fri, 4 Sep 2015 08:00:00 +0000</pubDate>
+      <itunes:author>The Minister Prime</itunes:author>
+      <itunes:subtitle>Episode #9</itunes:subtitle>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>1:35:38</itunes:duration>
+    </item>
+
     <item>
       <title>Progessive #8</title>
       <link>http://anthonyeden.com/progressive/8</link>
       <description>Episode #8</description>
-      <author>Aeden</author>
+      <author>The Minister Prime</author>
       <enclosure url="https://dl.dropboxusercontent.com/u/3308516/Mixes/Progressive-8.mp3" length="172219236" type="audio/mpeg"/>
       <guid>aeden8</guid>
       <pubDate>Fri, 21 Aug 2015 08:00:00 +0000</pubDate>
-      <itunes:author>Aeden</itunes:author>
+      <itunes:author>The Minister Prime</itunes:author>
       <itunes:subtitle>Episode #8</itunes:subtitle>
       <itunes:explicit>no</itunes:explicit>
       <itunes:duration>1:58:43</itunes:duration>
@@ -36,11 +50,11 @@
       <title>Progessive #7</title>
       <link>http://anthonyeden.com/progressive/7</link>
       <description>Episode #7</description>
-      <author>Aeden</author>
+      <author>The Minister Prime</author>
       <enclosure url="https://dl.dropboxusercontent.com/u/3308516/Mixes/Progressive-7.mp3" length="170072585" type="audio/mpeg"/>
       <guid>aeden7</guid>
       <pubDate>Fri, 14 Aug 2015 08:00:00 +0000</pubDate>
-      <itunes:author>Aeden</itunes:author>
+      <itunes:author>The Minister Prime</itunes:author>
       <itunes:subtitle>Episode #7</itunes:subtitle>
       <itunes:explicit>no</itunes:explicit>
       <itunes:duration>1:56:56</itunes:duration>
@@ -49,11 +63,11 @@
       <title>Progessive #6</title>
       <link>http://anthonyeden.com/progressive/6</link>
       <description>Episode #6</description>
-      <author>Aeden</author>
+      <author>The Minister Prime</author>
       <enclosure url="https://dl.dropboxusercontent.com/u/3308516/Mixes/Progressive-6.mp3" length="127392999" type="audio/mpeg"/>
       <guid>aeden6</guid>
       <pubDate>Fri, 7 Aug 2015 08:00:00 +0000</pubDate>
-      <itunes:author>Aeden</itunes:author>
+      <itunes:author>The Minister Prime</itunes:author>
       <itunes:subtitle>Episode #6</itunes:subtitle>
       <itunes:explicit>no</itunes:explicit>
       <itunes:duration>1:28:09</itunes:duration>
@@ -62,11 +76,11 @@
       <title>Progessive #5</title>
       <link>http://anthonyeden.com/progressive/5</link>
       <description>Episode #5</description>
-      <author>Aeden</author>
+      <author>The Minister Prime</author>
       <enclosure url="https://dl.dropboxusercontent.com/u/3308516/Mixes/Progressive-5.mp3" length="166787129" type="audio/mpeg"/>
       <guid>aeden5</guid>
       <pubDate>Wed, 29 Jul 2015 08:00:00 +0000</pubDate>
-      <itunes:author>Aeden</itunes:author>
+      <itunes:author>The Minister Prime</itunes:author>
       <itunes:subtitle>Episode #5</itunes:subtitle>
       <itunes:explicit>no</itunes:explicit>
       <itunes:duration>1:55:38</itunes:duration>
@@ -75,11 +89,11 @@
       <title>Progessive #4</title>
       <link>http://anthonyeden.com/progressive/4</link>
       <description>Episode #4</description>
-      <author>Aeden</author>
+      <author>The Minister Prime</author>
       <enclosure url="https://dl.dropboxusercontent.com/u/3308516/Mixes/Progressive-4.mp3" length="144525439" type="audio/mpeg"/>
       <guid>aeden4</guid>
       <pubDate>Fri, 17 Jul 2015 08:00:00 +0000</pubDate>
-      <itunes:author>Aeden</itunes:author>
+      <itunes:author>The Minister Prime</itunes:author>
       <itunes:subtitle>Episode #4</itunes:subtitle>
       <itunes:explicit>no</itunes:explicit>
       <itunes:duration>1:40:07</itunes:duration>
@@ -88,11 +102,11 @@
       <title>Progessive #3</title>
       <link>http://anthonyeden.com/progressive/3</link>
       <description>Episode #3</description>
-      <author>Aeden</author>
+      <author>The Minister Prime</author>
       <enclosure url="https://dl.dropboxusercontent.com/u/3308516/Mixes/Progressive-3.mp3" length="110935566" type="audio/mpeg"/>
       <guid>aeden3</guid>
       <pubDate>Fri, 03 Jul 2015 08:00:00 +0000</pubDate>
-      <itunes:author>Aeden</itunes:author>
+      <itunes:author>The Minister Prime</itunes:author>
       <itunes:subtitle>Episode #3</itunes:subtitle>
       <itunes:explicit>no</itunes:explicit>
       <itunes:duration>1:16:42</itunes:duration>
@@ -101,11 +115,11 @@
       <title>Progessive #2</title>
       <link>http://anthonyeden.com/progressive/2</link>
       <description>Episode #2</description>
-      <author>Aeden</author>
+      <author>The Minister Prime</author>
       <enclosure url="https://dl.dropboxusercontent.com/u/3308516/Mixes/Progressive-2.mp3" length="111961905" type="audio/mpeg"/>
       <guid>aeden2</guid>
       <pubDate>Fri, 03 Jul 2015 08:00:00 +0000</pubDate>
-      <itunes:author>Aeden</itunes:author>
+      <itunes:author>The Minister Prime</itunes:author>
       <itunes:subtitle>Episode #2</itunes:subtitle>
       <itunes:explicit>no</itunes:explicit>
       <itunes:duration>1:17:45</itunes:duration>
@@ -114,11 +128,11 @@
       <title>Progessive #1</title>
       <link>http://anthonyeden.com</link>
       <description>Episode #1</description>
-      <author>Aeden</author>
+      <author>The Minister Prime</author>
       <enclosure url="https://dl.dropboxusercontent.com/u/3308516/Mixes/Progressive-1.mp3" length="115561787" type="audio/mpeg"/>
       <guid>aeden1</guid>
       <pubDate>Mon, 29 Jun 2015 08:00:00 +0000</pubDate>
-      <itunes:author>Aeden</itunes:author>
+      <itunes:author>The Minister Prime</itunes:author>
       <itunes:subtitle>Episode #1</itunes:subtitle>
       <itunes:explicit>no</itunes:explicit>
       <itunes:duration>1:20:15</itunes:duration>
