@@ -5,7 +5,7 @@
     <description>Progressive House and Trance mixes</description>
     <language>en</language>
     <copyright>Minister Prime Music</copyright>
-    <lastBuildDate>Fri, 11 Sep 2015 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 18 Sep 2015 08:00:00 +0000</lastBuildDate>
     <category>Music</category>
     <atom:link rel="self" href="http://anthonyeden.com/progressive/podcast.xml" type="application/rss+xml"/>
     <itunes:author>The Minister Prime</itunes:author>
@@ -21,11 +21,25 @@
     <itunes:explicit>no</itunes:explicit>
 
     <item>
+      <title>Progessive #11</title>
+      <link>http://anthonyeden.com/progressive/11</link>
+      <description>Episode #11</description>
+      <author>The Minister Prime</author>
+      <enclosure url="https://dl.dropboxusercontent.com/u/3308516/Mixes/Progressive-11.mp3" length="177161090" type="audio/mpeg"/>
+      <guid>primetime11</guid>
+      <pubDate>Fri, 18 Sep 2015 08:00:00 +0000</pubDate>
+      <itunes:author>The Minister Prime</itunes:author>
+      <itunes:subtitle>Episode #11</itunes:subtitle>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>2:02:59</itunes:duration>
+    </item>
+
+    <item>
       <title>Progessive #10</title>
       <link>http://anthonyeden.com/progressive/10</link>
       <description>Episode #10</description>
       <author>The Minister Prime</author>
-      <enclosure url="https://dl.dropboxusercontent.com/u/3308516/Mixes/Progressive-10.mp3" length="177347391 " type="audio/mpeg"/>
+      <enclosure url="https://dl.dropboxusercontent.com/u/3308516/Mixes/Progressive-10.mp3" length="177347391" type="audio/mpeg"/>
       <guid>primetime10</guid>
       <pubDate>Fri, 11 Sep 2015 08:00:00 +0000</pubDate>
       <itunes:author>The Minister Prime</itunes:author>
