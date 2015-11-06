@@ -21,6 +21,18 @@
     <itunes:explicit>no</itunes:explicit>
 
     <item>
+      <title>New website and new podcast feed!</title>
+      <link>http://theministerprime.com</link>
+      <description>The Minister Prime has a new web site and podcast feed. Visit theministerprime.com now and update!</description>
+      <author>The Minister Prime</author>
+      <enclosure url="https://dl.dropboxusercontent.com/u/3308516/Mixes/message-to-listeners-2015-11-6.mp3" type="audio/mpeg"/>
+      <guid>message-2015-11-6</guid>
+      <pubDate>Fri, 6 Nov 2015 08:00:00 +0000</pubDate>
+      <itunes:author>The Minister Prime</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+    <item>
       <title>Progessive #16</title>
       <link>http://anthonyeden.com/progressive/16</link>
       <description>Episode #16</description>
