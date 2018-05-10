@@ -1,7 +1,7 @@
 description: Words from Anthony Eden, Founder of DNSimple
 title: All Things v9
 markdown: redcarpet
-pygments: true
+rouge: true
 author:
   name: Anthony Eden
 version: 9
