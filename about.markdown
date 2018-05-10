@@ -8,6 +8,8 @@ Hey there! I'm Anthony Eden, the creator and founder of [DNSimple](https://dnsim
 
 You can find me on Twitter as [@aeden](http://twitter.com/aeden) and on Github as [aeden](https://github.com/aeden) as well. I have created a large number of open source projects, some of which I continue to maintain today.
 
-I also used to publish a podcast called the [Strong Businesses Podcast](http://strongbusinessespodcast.com) with Steven Bristol of LessEverything. Some day it may return.
+I also used to publish a podcast called the [Strong Businesses Podcast](http://strongbusinessespodcast.com) with Steven Bristol.
 
-I publish a mostly-weekly podcast of progressive dance music over at [theministerprime.com](http://theministerprime.com). You can also find my own tracks on [SoundCloud](https://soundcloud.com/theministerprime).
+I used to publish a mostly-weekly podcast of progressive dance music over at [theministerprime.com](http://theministerprime.com). Someday I may do this again, but for now I am not.
+
+I also produce my own tracks which you on [SoundCloud](https://soundcloud.com/theministerprime).
