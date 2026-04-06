@@ -2,6 +2,7 @@
 layout: page
 title: The Rise of Generated AI Apps
 published: true
+permalink: /presentations/the-rise-of-generated-ai-apps/
 ---
 
 - <https://fortune.com/2026/03/25/ai-wall-street-software-as-a-service-productivity/>
