@@ -1,28 +1,314 @@
----
-layout: nil
----
-
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>{{ site.title }}</title>
- <link href="{{ site.url }}/atom.xml" rel="self"/>
- <link href="{{ site.url }}/"/>
- <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>{{ site.url }}</id>
+ <title>All Things v9</title>
+ <link href="/atom.xml" rel="self"/>
+ <link href="/"/>
+ <updated>2026-04-06T15:03:16+00:00</updated>
+ <id></id>
  <author>
-   <name>{{ site.author.name }}</name>
-   <email>{{ site.author.email }}</email>
+   <name>Anthony Eden</name>
+   <email></email>
  </author>
 
- {% for post in site.posts %}
+ 
  <entry>
-   <title>{{ post.title }}</title>
-   <link href="{{ site.url }}{{ post.url }}"/>
-   <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>{{ site.url }}{{ post.id }}</id>
-   <content type="html">{{ post.content | xml_escape }}</content>
+   <title>Music And Mixes</title>
+   <link href="/2015/08/08/music-and-mixes.html"/>
+   <updated>2015-08-08T14:40:00+00:00</updated>
+   <id>/2015/08/08/music-and-mixes</id>
+   <content type="html">&lt;p&gt;It’s been quite some time since I’ve published here, but I wanted to share some things I’ve been working on lately.&lt;/p&gt;
+
+&lt;p&gt;First, I’m publishing a progressive house and trance podcast, usually each week. You can subscribe using this URL: &lt;a href=&quot;http://anthonyeden.com/progressive/podcast.xml&quot;&gt;http://anthonyeden.com/progressive/podcast.xml&lt;/a&gt; or head over to the &lt;a href=&quot;/progressive/&quot;&gt;Progessive Podcast page&lt;/a&gt; I set up with track listings for each mix.. Each week I find my favorite progressive house and trance tracks, along with occasional other EDM styles, and I put them in a continous mix. I hope you enjoy!&lt;/p&gt;
+
+&lt;p&gt;I’ve also begun exprimenting with my own compositions again. I’ll publish them up on &lt;a href=&quot;https://soundcloud.com/theministerprime&quot;&gt;my SoundCloud page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Over at DNSimple we’ve been hard at work making new things and improving DNSimple for everyone. Some examples of things that we’ve recently released:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://howdns.works&quot;&gt;How DNS Works&lt;/a&gt; - a web comic explaining how DNS works.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://zone.vision&quot;&gt;Zone Vision&lt;/a&gt; - a tool for DNS zone diagnostics.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.dnsimple.com&quot;&gt;DNSimple Blog&lt;/a&gt; - we’ve been publishing lots of blog posts about us and our customers.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That’s the update for now. Thanks for dropping by!&lt;/p&gt;
+</content>
  </entry>
- {% endfor %}
+ 
+ <entry>
+   <title>When Lawyer Meets Internet</title>
+   <link href="/2014/03/18/when-lawyer-meets-internet.html"/>
+   <updated>2014-03-18T10:00:00+00:00</updated>
+   <id>/2014/03/18/when-lawyer-meets-internet</id>
+   <content type="html">&lt;p&gt;In today’s episode of “Doing it Terribly Wrong”, I give you an email I received today which demonstrates almost every possible thing you can do wrong in an email.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-email&quot;&gt;The Email&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Dear Sir/Madam,&lt;/p&gt;
+
+  &lt;p&gt;Specific Disclosure &amp;amp; Compliance&lt;/p&gt;
+
+  &lt;p&gt;This email refers to the suppression of the recipient’s email address.&lt;/p&gt;
+
+  &lt;p&gt;Your Email Ref:  REDACTED&lt;/p&gt;
+
+  &lt;p&gt;This email address was captured in the course of research which was commissioned by BDFP Legal from a third party research organisation.&lt;/p&gt;
+
+  &lt;p&gt;For details of the research organisation’s Privacy Policies see the information here:&lt;/p&gt;
+
+  &lt;p&gt;http://www.data-institute.org/about-terms-privacy-policy.html&lt;/p&gt;
+
+  &lt;p&gt;No-Reply: Please do not reply to this email. This is an automated email notification.&lt;/p&gt;
+
+  &lt;p&gt;Unsubscribe:  There is no need to ‘Unsubscribe’ as this will be the only notification which will be sent to you in respect of the research database subscription.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;U.S.  LEGISLATION&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This email is not an advertisement or marketing message under the terms of the CAN-SPAM Act of 2003. We do not trade on a retail basis, and you cannot purchase any goods or services from us.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;PRIVACY &amp;amp; PERSONAL DATA PROTECTION&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Inter alia, the purpose of this email is to confirm that no Identifiable Personal Data is held on any Natural Person using the email address in question.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The databases in question are purely corporate database which cover trading entities, companies, institutions, and organisations.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Identifiable Personal Data is programmatically disassociated with email addresses and any Identifiable Personal Data is eliminated before it can enter the database.&lt;/p&gt;
+
+  &lt;p&gt;Best regards,&lt;/p&gt;
+
+  &lt;p&gt;Compliance&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;BDFP Legal&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The information contained in this e-mail message is privileged and/or confidential and is intended only for the use of the individual or entity named above.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If the reader of this message is not the intended recipient, or the employee or agent responsible to deliver it to the intended recipient, you are hereby notified that any dissemination, distribution or copying of this communication is strictly prohibited.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you have received this communication in error, please immediately destroy this message.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Thank you.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;so-what-is-this-bdfp-legal-entity&quot;&gt;So what is this BDFP Legal entity?&lt;/h2&gt;
+
+&lt;p&gt;This email came from noreply@bdfp-legal.com, which is the first strike against them.&lt;/p&gt;
+
+&lt;p&gt;Their web site seems to indicate they are a law firm, however there is no way to contact them. I also took a look at their whois information but it doesn’t tell me much since they’ve placed whois privacy on it.&lt;/p&gt;
+
+&lt;p&gt;So I can’t reply, I can’t unsubscribe, or otherwise remove myself from their database, my name is part of the email address, so clearly it is personally identifiable data, and basically I’m just supposed to archive the message and move on.&lt;/p&gt;
+
+&lt;p&gt;But at least they’ve taken the space in their footer to tell me I cannot distribute or copy this information…oops, looks like I just did that. I’ll have you know that I “destroyed” the message by marking it as spam, so at least there’s that.&lt;/p&gt;
+
+&lt;p&gt;The sad part is that I’m familiar with The Data Insititute as they are a fairly well-known brand. I hope that they consider the impact of what their partners do and set policies that avoid these types of emails going out in the future.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>I Love To Travel</title>
+   <link href="/2014/01/02/i-love-to-travel.html"/>
+   <updated>2014-01-02T23:00:00+00:00</updated>
+   <id>/2014/01/02/i-love-to-travel</id>
+   <content type="html">&lt;p&gt;One of my favorite things to do is to travel to new locations and enjoy new experiences. Last year, my wife, kids and I travelled together to Berlin, New York, Canada, Michigan, Pennsylvania and Rome. Travelling as a family is challenging (especially when you have 4 kids), but it’s absolutely worth it. Here are some tips that I have found that help:&lt;/p&gt;
+
+&lt;h3 id=&quot;the-tips&quot;&gt;The Tips&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;When flying or driving, each kid has their own carry-on bag. A small back pack with toys and games to entertain them is ideal. Note that my kids are 12-year-old triplets and 5-year-old so this works for them but might not for younger kids.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Prepare snacks in advance. Dried fruits, chips, things like that. You don’t want to have to wait to be served by the airline staff or have to wait until the next rest stop.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Buy water. Either in the airport after clearing security (yes, it’s insanely expensive for what you get, but again, waiting to get your kids water when they really need it is no fun) or at a convenience store before driving long distances.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Travel at reasonable hours. Every time we’ve tried to leave very early in the morning it has backfired. We aim to leave at a reasonable time in the morning (outgoing flights at 10 AM for example) and return at a reasonable evening hour (flights leaving at 6 or 7 PM). This is especially useful when traveling long distances.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Use VRBO or something similar. With a family it’s just so much easier to have a full apartment with a kitchen than it is to figure out how to deal with hotels and eating out. You can still spend a night or two in a hotel somewhere for fun, but plan to spend most of the travel nights in a rented apartment.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Eat healthy. If you drive (and we have done some serious driving) it’s better to pack sandwiches you make for lunch than it is to eat McDonalds or something equally horrendous. Drink water, not soda or fruit drinks.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Stop regularly. If you’re flying and chaging time zones, then spend enough time in your connecting location time zone to adjust. We fly from France back to the US and there is a 6 hour time difference. It usually takes 6 days to adjust fully, so for this year’s trip we’re going to spend a week in New York before continuing on towards the West Coast. If you’re driving then stop every couple of hours. Find a park and let the kids run around. Schedule it during lunch and you can take your packed sandwiches and have a picnic.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Find activities for everyone. One of the most memorable activities from our US trip this past summer was a baseball game in Pittsburgh. Do things that are fun for the whole family.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Give yourself time after you get home. You’ll need to recover so make sure to take some time off &lt;em&gt;after&lt;/em&gt; your vaction and before you return to school or work.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Finally, have an adventure. You don’t have to hike the Himilayas or travel the Gobi desert, but you should try to do something that you’ve never done before when you can.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;addendum&quot;&gt;Addendum&lt;/h3&gt;
+
+&lt;p&gt;My wife mentioned a few more tips that I left off:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Always have a change of clothes for each child.&lt;/li&gt;
+  &lt;li&gt;Carry around a plastic bag for “messes”.&lt;/li&gt;
+  &lt;li&gt;Get each kid a surprise for the trip and only give it to them once you’re in the air (or on the road).&lt;/li&gt;
+  &lt;li&gt;Don’t overpack. Separate each kids things from the others by putting smaller bags in one or two larger ones. Garbage bags work great and double for dirty clothers bags later.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I’m sure there are even more, but I’m going to stop now. ;-)&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Switching to Jekyll</title>
+   <link href="/2013/12/30/switching-to-jekyll.html"/>
+   <updated>2013-12-30T15:22:00+00:00</updated>
+   <id>/2013/12/30/switching-to-jekyll</id>
+   <content type="html">&lt;p&gt;In an effort to simplify my blogging platform and remove impediences from my blogging, I’m switching over to Jekyll. Things may be odd for a bit - sorry.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Testing REST APIs With Cucumber and Rack</title>
+   <link href="/2013/07/10/testing-rest-apis-with-cucumber-and-rack.html"/>
+   <updated>2013-07-10T15:48:00+00:00</updated>
+   <id>/2013/07/10/testing-rest-apis-with-cucumber-and-rack</id>
+   <content type="html">&lt;p&gt;&lt;em&gt;Author’s note: This is a repost of an post I originally wrote in 2011. I’m reposting it by request. Enjoy!&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This evening Corey and I sat down and started looking into how we could make the tests live again. First we attempted to use Capybara directly, but ran into issues when trying to set HTTP headers. The DNSimple API uses Basic HTTP Authentication and thus we needed to set the header for that. We also need to set the Content-Type and Accept headers to ensure that Rails handles the input and output correctly. After peeling back some layers of the Capybara onion we landed upon Rack::Test. When using Rack, Capybara delegates request and response handling down to &lt;a href=&quot;http://github.com/brynary/rack-test&quot;&gt;Rack::Test&lt;/a&gt;. At this point we decided to see if we could use Rack::Test directly in our step definitions, and it worked like a charm.&lt;/p&gt;
+
+&lt;p&gt;Rack::Test has a module called Rack::Test::Methods that can be mixed into a class to provide it with methods for get, post, put, delete as well as last_request, last_response, header and more. We mixed Rack::Test::Methods into the Cucumber world at the top of our API steps file like so:&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/aeden/660319.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Then our steps could simply call the Rack::Test methods directly. For example, here’s how to send the HTTP Basic Auth header:&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/aeden/660321.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;And to set content type and accept headers:&lt;/p&gt;
+
+&lt;script src=&quot;http://gist.github.com/aeden/660323.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;And finally to actually send requests and test the responses. The entire api_steps.rb as it is right now looks like this:&lt;/p&gt;
+
+&lt;script src=&quot;http://gist.github.com/aeden/660331.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;And here is an example of a Cucumber feature that uses the API steps:&lt;/p&gt;
+
+&lt;script src=&quot;http://gist.github.com/aeden/660337.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;I doubt we’ve ended up with the ultimate final set of steps that can be used repeatedly for testing RESTful APIs, however I think it is an excellent start. I’m still on the fence about how to check the response body, specifically whether it is better to match the response body as a string or to actually parse it and write custom steps for each of the different types of objects, but time will tell.&lt;/p&gt;
+
+&lt;p&gt;As usual pairing with Corey resulted in some good code, a usable solution and something that I think others will benefit from as well.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Projects Moved: erl-dns and dnstest</title>
+   <link href="/psa/2013/05/06/projects-moved-erl-dns-and-dnstest.html"/>
+   <updated>2013-05-06T21:52:00+00:00</updated>
+   <id>/psa/2013/05/06/projects-moved-erl-dns-and-dnstest</id>
+   <content type="html">&lt;p&gt;Two projects which I’ve been spending considerable time on lately, erl-dns and dnstest, have now been moved under the aetrion organization on Github.&lt;/p&gt;
+
+&lt;h2 id=&quot;erl-dns&quot;&gt;erl-dns&lt;/h2&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://github.com/aetrion/erl-dns&quot;&gt;erl-dns project&lt;/a&gt; is an authoritative DNS server written in Erlang. Warning: don’t try this at home.&lt;/p&gt;
+
+&lt;h2 id=&quot;dnstest&quot;&gt;dnstest&lt;/h2&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://github.com/aetrion/dnstest&quot;&gt;dnstest&lt;/a&gt; project is a collection of regression tests from the PowerDNS 3 regression test suite which I’ve switched over to run in an Erlang test harness. I use these tests to test the correctness of the responses from erl-dns.&lt;/p&gt;
+
+&lt;p&gt;I’ll be writing more about both of these projects in the future, especially as we move erl-dns into production at &lt;a href=&quot;https://dnsimple.com&quot;&gt;DNSimple&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Update your forks if necessary. Thanks!&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Hacking CGI and Perl</title>
+   <link href="/2013/05/04/hacking-cgi-and-perl.html"/>
+   <updated>2013-05-04T20:37:00+00:00</updated>
+   <id>/2013/05/04/hacking-cgi-and-perl</id>
+   <content type="html">&lt;p&gt;After a few months of slinging some pretty incredible HTML (not really) I was stymied by one particular type of tag: I couldn’t do anything with this FORM tag. Well, I could render a form on the page, but that’s not very useful by itself. When in doubt I turned to the most obvious guide: &lt;a href=&quot;http://dje.io&quot;&gt;@dje&lt;/a&gt;. I asked Darrin what I could do to get the stuff from forms and do something with it and his answer was: look into CGI.&lt;/p&gt;
+
+&lt;p&gt;At this point I had no idea of how my HTML pages were even showing up when I was using a browser. All I knew was that I had to put the files in a particular directory and that if I had a file called index.html in a directory then that HTML content would show up when the URL in the browser was for the enclosing directory. After a bit of research I came to the conclusion that CGI was something you did with Perl (yes, this was not the correct conclusion, but it lead me to the next step.&lt;/p&gt;
+
+&lt;p&gt;Somehow I found a book about Perl. The actual title was Teach Yourself Perl in 21 Days, published in 1994. I think I finished it in less than 21 days - learning a programming language for the first time was amazing. I felt like I had found something powerful and that now I could make a computer do anything. I figured out how to put scripts up on the server where they could be executed (again with quite a bit of help from Darrin, I’m sure) and I was off to the races.&lt;/p&gt;
+
+&lt;p&gt;Over the next two years I wrote a lot of perl scripts. I wrote perl scripts to take form input and send it via email. Then I wrote perl scripts to take form input and store it in a MySQL database. My scripts became more and more complicated. I began writing scripts that used Perl 5’s object syntax. I even wrote a content publishing system for the University of Miami’s newspaper.&lt;/p&gt;
+
+&lt;p&gt;In 1996 I spent a year abroad in Vienna, focusing on music. When I returned in 1997 I realized that there were some things I’d probably never be able to do with Perl (most likely this isn’t true, but this is what I thought).&lt;/p&gt;
+
+&lt;p&gt;I really wanted to be able to develop software for my Mac (which I believe was running OS 9 at this point). I looked at the tomes that Apple execpted OS 9 developers to understand and came to the conclusion that I was neither ready for that, nor was I ready for the C programming language which was the language of choice for developing OS 9 applications. Again, I believe it was @dje who came to the rescue, pointing me to a new language which was recently released called Java.&lt;/p&gt;
+
+&lt;p&gt;Next up: Java and Open Source&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Beginning</title>
+   <link href="/stories/2013/05/01/beginning.html"/>
+   <updated>2013-05-01T11:24:00+00:00</updated>
+   <id>/stories/2013/05/01/beginning</id>
+   <content type="html">&lt;p&gt;When you don’t know where to start, you start from the beginning. In this case though everything before 1994 would probably be mostly useless, even if it would occasionally be amusing. Thus, let’s start in 1994.&lt;/p&gt;
+
+&lt;p&gt;In 1994 I entered the University of Miami as a freshmen with my major as Music Composition. I can’t recall why I chose to go to college - I suppose that’s what a kid from a middle-class family is supposed to do, so I did it. I was very fortunate in that my father worked for the University of Miami for many years and essentially provided a means for me to go to U of M for free. No doubt that’s another reason I went: it was essentially an extension of my parents taking care of me. 4 more years of fun and frolicking, right?&lt;/p&gt;
+
+&lt;p&gt;Anyhow, back to the story. As a freshman I lived in the dorms, had a meal plan, and essentially didn’t need much money, but a little wouldn’t hurt. My brother (&lt;a href=&quot;http://dje.io&quot;&gt;@dje&lt;/a&gt;) was already a Sophomore and was working in the computer labs. The labs always needed lab techs to sit at the front desk and give students access to machines, so he hooked me up with a job doing just that. Other duties included running back to the printer room to grab printouts for the grad students who used the line printers, rebooting machines that failed (this was back in the Mac OS 8 days) and trying to keep from being bored. About the best part was shutting down the labs at the end of the day and then having LAN parties playing Marathon.&lt;/p&gt;
+
+&lt;p&gt;One day Darrin comes to me and says he wants to show me something on his computer. He pulls up this application and tells me that this is the future. The application was Mosaic and Darrin was showing me the world wide web. Mosaic had been released in 1993, so this was really &lt;a href=&quot;http://info.cern.ch/&quot;&gt;the early days&lt;/a&gt; in the &lt;a href=&quot;http://en.wikipedia.org/wiki/World_Wide_Web&quot;&gt;history of the web&lt;/a&gt;. None the less, I was interested in understanding how I could make something with it right from the beginning. I decided that I would make a web site where I could put up my music along with photos of artwork from a friend and written works by another friend. I can’t remember what the name of the site was, but I do recall it was pretty awful. The thing is: it didn’t matter that it was awful, all that mattered was that I could build it using nothing more than View Source and a few tutorials. About the only programming experience I had at this point was some Basic.&lt;/p&gt;
+
+&lt;p&gt;In short: the web was an amazing, open environment that has been central in my life for almost 20 years now and I am truly thankful for all of the people who have contributed to make it what it is over that time.&lt;/p&gt;
+
+&lt;p&gt;Next up: Hacking my Way Through CGI and Perl&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>One-hundred Percent DNSimple</title>
+   <link href="/2013/04/04/one-hundred-percent-dnsimple.html"/>
+   <updated>2013-04-04T06:00:00+00:00</updated>
+   <id>/2013/04/04/one-hundred-percent-dnsimple</id>
+   <content type="html">&lt;p&gt;Tomorrow is my last day at LivingSocial. After 2 years of being an employee I am now switching all of my focus to my own business. I am excited and nervous about this step, but I feel it is time.&lt;/p&gt;
+
+&lt;p&gt;Working at LivingSocial has been an incredible experience. It was often quite challenging due to the sheer volume of traffic that LivingSocial handles on a daily basis. I had the pleasure of working on a wide range of projects, from payment systems to email delivery systems. I worked on the initial version of the 918F registration site and watched that project take off. I also worked with the Takeout &amp;amp; Delivery team to help improve restaurant ordering systems. It has been a helluva a ride, however now it is time to get focused on DNSimple.&lt;/p&gt;
+
+&lt;p&gt;The first DNSimple commit occurred on April 6th, 2010. That is almost 3 years to the day. From a little side project it has grown significantly and steadily. We now have over 6400 customers who rely on us. We have more than 19,000 domains registered through us and if this year continues on track then we should exceed $1 million in revenue for the year 2013. I imagine a world where buying a domain name, managing DNS and purchasing SSL certificates are all experiences that are enjoyable, easy and painless. There is a lot of room for improvement, both in our offerings and in the industry as a whole, and I am thrilled to be working towards that goal full time now.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>All Things v8</title>
+   <link href="/2012/09/27/all-things-v8.html"/>
+   <updated>2012-09-27T12:13:00+00:00</updated>
+   <id>/2012/09/27/all-things-v8</id>
+   <content type="html">&lt;p&gt;My old Wordpress blog got hacked (yay PHP!) so now I’m moving All Things over to Github Pages. Here we are. I might move old content over, I might not, we will see.&lt;/p&gt;
+</content>
+ </entry>
+ 
 
 </feed>

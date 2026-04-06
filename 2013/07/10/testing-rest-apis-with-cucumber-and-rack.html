@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <title>
+    Testing REST APIs With Cucumber and Rack &middot; 
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/hyde.css">
+  <link rel="stylesheet" href="/css/syntax.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2727679-1', 'anthonyeden.com');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+
+
+  <body class="theme-base-0d">
+
+    <header class="masthead">
+      <div class="masthead-inner">
+        <h1><a href="/">All Things v9</a></h1>
+
+        <p class="lead">Words from Anthony Eden, Founder of DNSimple</p>
+
+        <p><a href="https://twitter.com/aeden" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @aeden</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
+
+        <div class="colophon">
+          <ul class="colophon-links">
+            <li>
+              <a href="/about">About Me</a>
+            </li>
+            <li>
+            <a href="https://twitter.com/aeden">Twitter</a>
+            </li>
+            <li>
+              <a href="https://github.com/aeden">GitHub</a>
+            </li>
+            <li>
+              <a href="http://theministerprime.com">Progressive Music Podcast</a>
+            </li>
+            <li>
+              <a href="https://soundcloud.com/theministerprime">SoundCloud</a>
+            </li>
+            <li>
+              <a href="https://dnsimple.com">DNSimple</a>
+            </li>
+            <li>
+              <a href="http://howdns.works">How DNS Works</a>
+            </li>
+            <li>Currently v9</li>
+          </ul>
+          <p>&copy; Anthony Eden All rights reserved.</p>
+        </div>
+
+      </div>
+    </header>
+
+    <div class="content container">
+      <div class="post">
+  <h1>Testing REST APIs With Cucumber and Rack</h1>
+  <span class="post-date">10 Jul 2013</span>
+  <p><em>Author’s note: This is a repost of an post I originally wrote in 2011. I’m reposting it by request. Enjoy!</em></p>
+
+<p>This evening Corey and I sat down and started looking into how we could make the tests live again. First we attempted to use Capybara directly, but ran into issues when trying to set HTTP headers. The DNSimple API uses Basic HTTP Authentication and thus we needed to set the header for that. We also need to set the Content-Type and Accept headers to ensure that Rails handles the input and output correctly. After peeling back some layers of the Capybara onion we landed upon Rack::Test. When using Rack, Capybara delegates request and response handling down to <a href="http://github.com/brynary/rack-test">Rack::Test</a>. At this point we decided to see if we could use Rack::Test directly in our step definitions, and it worked like a charm.</p>
+
+<p>Rack::Test has a module called Rack::Test::Methods that can be mixed into a class to provide it with methods for get, post, put, delete as well as last_request, last_response, header and more. We mixed Rack::Test::Methods into the Cucumber world at the top of our API steps file like so:</p>
+
+<script src="https://gist.github.com/aeden/660319.js"></script>
+
+<p>Then our steps could simply call the Rack::Test methods directly. For example, here’s how to send the HTTP Basic Auth header:</p>
+
+<script src="https://gist.github.com/aeden/660321.js"></script>
+
+<p>And to set content type and accept headers:</p>
+
+<script src="http://gist.github.com/aeden/660323.js"></script>
+
+<p>And finally to actually send requests and test the responses. The entire api_steps.rb as it is right now looks like this:</p>
+
+<script src="http://gist.github.com/aeden/660331.js"></script>
+
+<p>And here is an example of a Cucumber feature that uses the API steps:</p>
+
+<script src="http://gist.github.com/aeden/660337.js"></script>
+
+<p>I doubt we’ve ended up with the ultimate final set of steps that can be used repeatedly for testing RESTful APIs, however I think it is an excellent start. I’m still on the fence about how to check the response body, specifically whether it is better to match the response body as a string or to actually parse it and write custom steps for each of the different types of objects, but time will tell.</p>
+
+<p>As usual pairing with Corey resulted in some good code, a usable solution and something that I think others will benefit from as well.</p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2015/08/08/music-and-mixes.html">
+            Music And Mixes
+            <small>08 Aug 2015</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2014/03/18/when-lawyer-meets-internet.html">
+            When Lawyer Meets Internet
+            <small>18 Mar 2014</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2014/01/02/i-love-to-travel.html">
+            I Love To Travel
+            <small>02 Jan 2014</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+    </div>
+
+  </body>
+</html>

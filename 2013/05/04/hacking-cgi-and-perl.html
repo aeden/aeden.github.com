@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <title>
+    Hacking CGI and Perl &middot; 
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/hyde.css">
+  <link rel="stylesheet" href="/css/syntax.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2727679-1', 'anthonyeden.com');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+
+
+  <body class="theme-base-0d">
+
+    <header class="masthead">
+      <div class="masthead-inner">
+        <h1><a href="/">All Things v9</a></h1>
+
+        <p class="lead">Words from Anthony Eden, Founder of DNSimple</p>
+
+        <p><a href="https://twitter.com/aeden" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @aeden</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
+
+        <div class="colophon">
+          <ul class="colophon-links">
+            <li>
+              <a href="/about">About Me</a>
+            </li>
+            <li>
+            <a href="https://twitter.com/aeden">Twitter</a>
+            </li>
+            <li>
+              <a href="https://github.com/aeden">GitHub</a>
+            </li>
+            <li>
+              <a href="http://theministerprime.com">Progressive Music Podcast</a>
+            </li>
+            <li>
+              <a href="https://soundcloud.com/theministerprime">SoundCloud</a>
+            </li>
+            <li>
+              <a href="https://dnsimple.com">DNSimple</a>
+            </li>
+            <li>
+              <a href="http://howdns.works">How DNS Works</a>
+            </li>
+            <li>Currently v9</li>
+          </ul>
+          <p>&copy; Anthony Eden All rights reserved.</p>
+        </div>
+
+      </div>
+    </header>
+
+    <div class="content container">
+      <div class="post">
+  <h1>Hacking CGI and Perl</h1>
+  <span class="post-date">04 May 2013</span>
+  <p>After a few months of slinging some pretty incredible HTML (not really) I was stymied by one particular type of tag: I couldn’t do anything with this FORM tag. Well, I could render a form on the page, but that’s not very useful by itself. When in doubt I turned to the most obvious guide: <a href="http://dje.io">@dje</a>. I asked Darrin what I could do to get the stuff from forms and do something with it and his answer was: look into CGI.</p>
+
+<p>At this point I had no idea of how my HTML pages were even showing up when I was using a browser. All I knew was that I had to put the files in a particular directory and that if I had a file called index.html in a directory then that HTML content would show up when the URL in the browser was for the enclosing directory. After a bit of research I came to the conclusion that CGI was something you did with Perl (yes, this was not the correct conclusion, but it lead me to the next step.</p>
+
+<p>Somehow I found a book about Perl. The actual title was Teach Yourself Perl in 21 Days, published in 1994. I think I finished it in less than 21 days - learning a programming language for the first time was amazing. I felt like I had found something powerful and that now I could make a computer do anything. I figured out how to put scripts up on the server where they could be executed (again with quite a bit of help from Darrin, I’m sure) and I was off to the races.</p>
+
+<p>Over the next two years I wrote a lot of perl scripts. I wrote perl scripts to take form input and send it via email. Then I wrote perl scripts to take form input and store it in a MySQL database. My scripts became more and more complicated. I began writing scripts that used Perl 5’s object syntax. I even wrote a content publishing system for the University of Miami’s newspaper.</p>
+
+<p>In 1996 I spent a year abroad in Vienna, focusing on music. When I returned in 1997 I realized that there were some things I’d probably never be able to do with Perl (most likely this isn’t true, but this is what I thought).</p>
+
+<p>I really wanted to be able to develop software for my Mac (which I believe was running OS 9 at this point). I looked at the tomes that Apple execpted OS 9 developers to understand and came to the conclusion that I was neither ready for that, nor was I ready for the C programming language which was the language of choice for developing OS 9 applications. Again, I believe it was @dje who came to the rescue, pointing me to a new language which was recently released called Java.</p>
+
+<p>Next up: Java and Open Source</p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2015/08/08/music-and-mixes.html">
+            Music And Mixes
+            <small>08 Aug 2015</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2014/03/18/when-lawyer-meets-internet.html">
+            When Lawyer Meets Internet
+            <small>18 Mar 2014</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2014/01/02/i-love-to-travel.html">
+            I Love To Travel
+            <small>02 Jan 2014</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+    </div>
+
+  </body>
+</html>
